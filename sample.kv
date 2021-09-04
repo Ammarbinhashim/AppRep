@@ -1,0 +1,32 @@
+<app_panel>
+
+    name:name
+    ppsize:ppsize
+    simpdetector:simpdetector
+
+    GridLayout: 
+        cols:1
+        size: root.width, root.height
+        GridLayout: 
+            cols:2
+            Label:
+                text: 'Name'
+            TextInput:
+                id:name
+                multiline:False
+            Label:
+                text: 'Dick Size'
+            TextInput:
+                id:ppsize
+                multiline:False
+            
+            Label:
+                text: 'U gae?'
+            TextInput:
+                id:simpdetector
+                multiline:False
+        
+        Button:
+			text: "Conclusion"
+			font_size: 32
+			on_press: root.whattosay()
